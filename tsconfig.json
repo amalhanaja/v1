@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "noUnusedLocals": true,
+        "strict": true,
+        "module": "commonjs",
+        "target": "esnext",
+        "jsx": "react",
+        "lib": ["dom", "esnext"]
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "typeRoots": ["node_modules/@types"],
+    "exclude": ["node_modules", "public", ".cache"]
+
+}
