@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         margin: 0;
         overflow-x: hidden;
-        background: #FBF5E5;
+        background: #FCF7F1;
         font-family: Quicksand, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif
     }
 `

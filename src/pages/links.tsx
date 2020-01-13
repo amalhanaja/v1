@@ -6,6 +6,7 @@ import IconLinkedIn from "../components/Icons/LinkedIn"
 import IconGithub from "../components/Icons/Github"
 import IconLink from "../components/Icons/IconLink"
 import Helmet from "react-helmet"
+import IconTwitter from "../components/Icons/Twitter"
 
 const Wrapper = styled.div`
   width: 100%;
@@ -65,6 +66,14 @@ const LinksPage: React.FC = () => {
           target="_blank"
         >
           <IconGithub />
+        </IconLink>
+        <IconLink
+          rel="nofollow noopener noreferrer"
+          aria-label="Github"
+          href="https://twitter.com/amalhanaja"
+          target="_blank"
+        >
+          <IconTwitter />
         </IconLink>
       </SocialMediaWrapper>
     </Wrapper>

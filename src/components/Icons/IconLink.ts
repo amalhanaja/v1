@@ -6,8 +6,8 @@ const IconLink = styled.a`
   fill: #333333;
   &:hover,
   &:focus {
-    fill: #3BB0BA;
-    border-bottom: 2px solid #3BB0BA;
+    fill: #19A4E1;
+    border-bottom: 2px solid #19A4E1;
   }
   svg {
     width: 24px;
