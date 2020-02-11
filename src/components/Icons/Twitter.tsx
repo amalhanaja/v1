@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 
 const IconTwitter: React.FC = () => (
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 612 612">
@@ -13,6 +13,6 @@ const IconTwitter: React.FC = () => (
         c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z"
     />
   </svg>
-)
+);
 
-export default IconTwitter
+export default IconTwitter;

@@ -1,7 +1,7 @@
-import * as React from "react"
+import * as React from 'react';
 
 const IconLinkedIn: React.FC = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 430.117 430.117">
+  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 430.117 430.117">
     <title>LinkedIn</title>
     <path
       d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
@@ -12,6 +12,6 @@ const IconLinkedIn: React.FC = () => (
            M5.477,420.56h92.184v-277.32H5.477V420.56z"
     />
   </svg>
-)
+);
 
 export default IconLinkedIn;

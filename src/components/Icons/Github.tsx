@@ -1,7 +1,7 @@
-import * as React from "react"
+import * as React from 'react';
 
 const IconGithub: React.FC = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 438.549 438.549">
+  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 438.549 438.549">
     <title>GitHub</title>
     <path
       d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
@@ -25,6 +25,6 @@ const IconGithub: React.FC = () => (
           C438.536,184.851,428.728,148.168,409.132,114.573z"
     />
   </svg>
-)
+);
 
 export default IconGithub;
