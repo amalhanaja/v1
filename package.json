@@ -54,7 +54,12 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md,tsx,ts}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "type-check": "tsc --noEmit",
+    "lint": "yarn run lint:es && yarn run lint:style",
+    "lint:es": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:es:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:style": "stylelint './src/**/*.{js,ts}'",
+    "prettify": "prettier --write",
+    "typecheck": "tsc --noEmit",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
