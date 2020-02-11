@@ -52,7 +52,9 @@ const SectionWrapper = styled.section`
 
 const Hero: React.FC = () => (
   <SectionWrapper>
-    <Overline>Hi, my name is</Overline>
+    <Overline>
+      <span role="img" aria-label="Hi">👋</span>, my name is
+    </Overline>
     <Title>Alfian Akmal Hanantio.</Title>
     <Description>
       Also known as Amal, a 21-years-old self-taught Software Engineer based in
@@ -60,8 +62,7 @@ const Hero: React.FC = () => (
       <span role="img" aria-label="indonesia">
         🇮🇩
       </span>
-      . I love to share my knowledge, and experience in programming and to
-      motivate more people to code.
+      .
     </Description>
     <div>
       <EmailLink href="">Get in Touch</EmailLink>
