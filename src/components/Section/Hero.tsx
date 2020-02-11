@@ -23,8 +23,8 @@ const EmailLink = styled.a`
   font-size: 18px;
   letter-spacing: 0.3px;
   border-radius: 16px;
-  background: #f4f4f4;
-  box-shadow: 8px 8px 16px #cfcfcf, -8px -8px 16px #ffffff;
+  background: #f2f2f2;
+  box-shadow: 8px 8px 8px #cecece, -8px -8px 8px #ffffff;
   padding: 12px 24px;
   text-decoration: none;
   cursor: pointer;
@@ -39,7 +39,7 @@ const EmailLink = styled.a`
   }
   &:focus {
     transform: scale(0.97);
-    box-shadow: inset 3px 3px 7px #cfcfcf, inset -3px -3px 7px #ffffff;
+    box-shadow: inset 3px 3px 5px #cecece, inset -3px -3px 7px #ffffff;
   }
 `;
 
@@ -53,7 +53,10 @@ const SectionWrapper = styled.section`
 const Hero: React.FC = () => (
   <SectionWrapper>
     <Overline>
-      <span role="img" aria-label="Hi">👋</span>, my name is
+      <span role="img" aria-label="Hi">
+        👋
+      </span>
+      , my name is
     </Overline>
     <Title>Alfian Akmal Hanantio.</Title>
     <Description>

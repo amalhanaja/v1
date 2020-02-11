@@ -2,6 +2,7 @@ import * as React from 'react';
 import { PageRendererProps } from 'gatsby';
 import Main from './Main';
 import GlobalStyle from '../../styles/GlobalStyle';
+import Footer from '../Footer';
 
 type LayoutProps = {
   path: string;
@@ -14,6 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ path, children }) => {
     <>
       <GlobalStyle />
       <Main>{children}</Main>
+      <Footer />
     </>
   );
 };
