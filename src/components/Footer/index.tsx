@@ -5,8 +5,8 @@ const FooterWrapper = styled.footer`
   padding: 24px 0;
   display: flex;
   flex-direction: column;
-  background: #f2f2f2;
-  box-shadow: 8px 8px 12px #cecece, -8px -8px 12px #ffffff;
+  background: ${(props): string => props.theme.colors.surface};
+  box-shadow: ${(props): string => `0px -8px 12px ${props.theme.colors.surfaceLight}`};
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
 `;

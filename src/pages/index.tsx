@@ -1,7 +1,5 @@
 import * as React from 'react';
-import {
-  Link, RouteUpdateArgs, PageRenderer, PageRendererProps,
-} from 'gatsby';
+import { PageRendererProps } from 'gatsby';
 import Layout from '../components/Layout';
 import Hero from '../components/Section/Hero';
 

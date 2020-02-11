@@ -22,9 +22,12 @@ export interface FonstSizes {
   xxl: string;
 }
 
+export type ThemeType = 'light';
 export interface Theme {
+  themeType: ThemeType;
   spaces: [string, string, string, string, string, string];
   colors: Colors;
   fontWeights: FontWeights;
   fontSizes: FonstSizes;
+  toggle?: (themeType: ThemeType) => void;
 }

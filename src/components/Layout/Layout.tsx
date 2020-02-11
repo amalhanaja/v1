@@ -1,23 +1,18 @@
 import * as React from 'react';
-import { PageRendererProps } from 'gatsby';
 import Main from './Main';
-import GlobalStyle from '../../styles/GlobalStyle';
 import Footer from '../Footer';
+import Theme from '../Theme';
 
 type LayoutProps = {
   path: string;
   children?: React.ReactNode;
 };
 
-const Layout: React.FC<LayoutProps> = ({ path, children }) => {
-  console.log(path);
-  return (
-    <>
-      <GlobalStyle />
-      <Main>{children}</Main>
-      <Footer />
-    </>
-  );
-};
+const Layout: React.FC<LayoutProps> = ({ path, children }) => (
+  <Theme>
+    <Main>{children}</Main>
+    { path === '/' ? <Footer /> : null}
+  </Theme>
+);
 
 export default Layout;

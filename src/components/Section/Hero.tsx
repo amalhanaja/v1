@@ -23,8 +23,8 @@ const EmailLink = styled.a`
   font-size: 18px;
   letter-spacing: 0.3px;
   border-radius: 16px;
-  background: #f2f2f2;
-  box-shadow: 8px 8px 8px #cecece, -8px -8px 8px #ffffff;
+  background: ${(props): string => props.theme.colors.surface};
+  box-shadow: ${(props): string => `8px 8px 8px ${props.theme.colors.surfaceDark}, -8px -8px 8px ${props.theme.colors.surfaceLight}`};
   padding: 12px 24px;
   text-decoration: none;
   cursor: pointer;

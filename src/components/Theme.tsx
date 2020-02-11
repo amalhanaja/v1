@@ -1,16 +1,32 @@
 import * as React from 'react';
+import { ThemeContext, ThemeProvider } from 'styled-components';
+import LightTheme from '../styles/themes/LightTheme';
+import GlobalStyle from '../styles/GlobalStyle';
 
 interface ThemeProps {
-  children: any;
+  children: React.ReactNode;
 }
 const Theme: React.FC<ThemeProps> = ({ children }) => {
   const mql = window.matchMedia('(prefers-color-scheme: dark');
-  const [theme, setTheme] = React.useState(
+  const [themeName, setThemeName] = React.useState(
     localStorage.getItem('theme') || 'light',
   );
-  const toggleTheme = (t: string): void => {
-    localStorage.setItem('theme', 'theme');
-    setTheme(theme);
+  const toggleTheme = (name: string): void => {
+    localStorage.setItem('theme', name);
+    setThemeName(name);
   };
-  return <div />;
+
+  const theme = LightTheme;
+  return (
+    <ThemeContext.Provider value={{ ...theme, toggle: toggleTheme }}>
+      <ThemeProvider theme={theme}>
+        <>
+          <GlobalStyle />
+          {children}
+        </>
+      </ThemeProvider>
+    </ThemeContext.Provider>
+  );
 };
+
+export default Theme;

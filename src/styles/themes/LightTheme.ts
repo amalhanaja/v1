@@ -1,6 +1,7 @@
 import { DefaultTheme } from 'styled-components';
 
 const LightTheme: DefaultTheme = {
+  themeType: 'light',
   fontSizes: {
     base: '16px',
     xs: '12px',

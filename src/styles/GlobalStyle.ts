@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: ${(props): string => props.theme.fontSizes.base};
+    background: ${(props): string => props.theme.colors.surface};
     overflow-x: hidden;
     font-family: Quicksand, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
   }
