@@ -1,7 +1,8 @@
-import { Theme } from './types';
+import { DefaultTheme } from 'styled-components';
 
-const LightTheme: Theme = {
+const LightTheme: DefaultTheme = {
   fontSizes: {
+    base: '16px',
     xs: '12px',
     sm: '14px',
     md: '16px',
@@ -16,9 +17,11 @@ const LightTheme: Theme = {
   spaces: ['4px', '8px', '16px', '32px', '64px', '128px'],
   colors: {
     text: '#333333',
-    primary: '#19A4E1',
-    surface: '#FFFFFF',
-    secondary: '#C6CCC5',
+    primary: '#d63447',
+    surface: '#f2f3f7',
+    surfaceDark: '#dadbde',
+    surfaceLight: '#fff',
+    secondary: '#f57B51',
   },
 };
 

@@ -3,6 +3,8 @@ export interface Colors {
   text: string;
   secondary: string;
   surface: string;
+  surfaceLight: string;
+  surfaceDark: string;
 }
 
 export interface FontWeights {
@@ -11,6 +13,7 @@ export interface FontWeights {
 }
 
 export interface FonstSizes {
+  base: string;
   xs: string;
   sm: string;
   md: string;
