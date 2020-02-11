@@ -2,6 +2,7 @@ import * as React from 'react';
 import { ThemeContext, ThemeProvider } from 'styled-components';
 import LightTheme from '../styles/themes/LightTheme';
 import GlobalStyle from '../styles/GlobalStyle';
+import DarkTheme from '../styles/themes/DarkTheme';
 
 interface ThemeProps {
   children: React.ReactNode;
@@ -16,7 +17,7 @@ const Theme: React.FC<ThemeProps> = ({ children }) => {
     setThemeName(name);
   };
 
-  const theme = LightTheme;
+  const theme = themeName === DarkTheme.themeType ? DarkTheme : LightTheme;
   return (
     <ThemeContext.Provider value={{ ...theme, toggle: toggleTheme }}>
       <ThemeProvider theme={theme}>
