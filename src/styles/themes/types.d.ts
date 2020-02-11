@@ -22,7 +22,7 @@ export interface FonstSizes {
   xxl: string;
 }
 
-export type ThemeType = 'light';
+export type ThemeType = 'light' | 'dark';
 export interface Theme {
   themeType: ThemeType;
   spaces: [string, string, string, string, string, string];
