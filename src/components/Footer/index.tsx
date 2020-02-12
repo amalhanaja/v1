@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { string } from 'prop-types';
 
 const FooterWrapper = styled.footer`
   padding: 24px 0;
