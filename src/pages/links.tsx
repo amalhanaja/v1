@@ -45,7 +45,7 @@ const LinksPage: React.FC<PageRendererProps> = ({ location }) => (
         alt="avatar"
         src="https://scontent-sin6-2.cdninstagram.com/v/t51.2885-19/s320x320/80603429_1307448196122574_2992266679620206592_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=110&_nc_ohc=4wspcgtnlV0AX-ua28q&oh=e60b4412553a2dfb5642bcf854d064c9&oe=5EA801F3"
       />
-      <h2>Alfian Akmal Hanantio</h2>
+      <h2 style={{ textAlign: 'center' }}>Alfian Akmal Hanantio</h2>
       <p>Android Engineer</p>
       <SocialMediaWrapper>
         <IconLink
