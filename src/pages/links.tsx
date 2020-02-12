@@ -8,6 +8,7 @@ import IconGithub from '../components/Icons/Github';
 import IconLink from '../components/Icons/IconLink';
 import IconTwitter from '../components/Icons/Twitter';
 import Layout from '../components/Layout';
+import IconGooglePlay from '../components/Icons/GooglePlay';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -15,23 +16,26 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
-  justify-content: center;
+  padding-top: ${({ theme }): string => theme.spaces[3]}
 `;
 
 const AvatarImg = styled.img`
   border-radius: 100%;
   width: 100px;
-  margin: 16px;
+  margin-bottom: ${({ theme }): string => theme.spaces[2]}
 `;
 
 const SocialMediaWrapper = styled.div`
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: ${({ theme }): string => theme.spaces[3]};
+  margin-bottom: ${({ theme }): string => theme.spaces[2]};
   display: flex;
+  padding-left: ${({ theme }): string => theme.spaces[3]};
+  padding-right: ${({ theme }): string => theme.spaces[3]};
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   a {
-    margin: 8px;
+    margin: ${({ theme }): string => theme.spaces[1]};
   }
 `;
 
@@ -43,7 +47,7 @@ const LinksPage: React.FC<PageRendererProps> = ({ location }) => (
       </Helmet>
       <AvatarImg
         alt="avatar"
-        src="https://scontent-sin6-2.cdninstagram.com/v/t51.2885-19/s320x320/80603429_1307448196122574_2992266679620206592_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=110&_nc_ohc=4wspcgtnlV0AX-ua28q&oh=e60b4412553a2dfb5642bcf854d064c9&oe=5EA801F3"
+        src="https://scontent-sin2-2.cdninstagram.com/v/t51.2885-19/s320x320/83526892_2999600360084921_5834968961472528384_n.jpg?_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=105&_nc_ohc=o63lglIqVbwAX9vQq9f&oh=e09439d9e670df89a5647c0633f00b2f&oe=5EBEE206"
       />
       <h2 style={{ textAlign: 'center' }}>Alfian Akmal Hanantio</h2>
       <p>Android Engineer</p>
@@ -79,6 +83,14 @@ const LinksPage: React.FC<PageRendererProps> = ({ location }) => (
           target="_blank"
         >
           <IconTwitter />
+        </IconLink>
+        <IconLink
+          rel="nofollow noopener noreferrer"
+          aria-label="Github"
+          href="https://play.google.com/store/apps/developer?id=amal.codes"
+          target="_blank"
+        >
+          <IconGooglePlay />
         </IconLink>
       </SocialMediaWrapper>
     </Wrapper>
