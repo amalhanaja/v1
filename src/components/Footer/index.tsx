@@ -15,21 +15,32 @@ const GithubLink = styled.a`
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  color: ${(props): string => props.theme.colors.surface};
+  color: #ffc5cc;
   font-size: ${(props): string => props.theme.fontSizes.xs};
   font-weight: ${(props): number => props.theme.fontWeights.bold};
+  transition: all 0.2s ease-out;
+  &:hover {
+    transform: scale(1.1);
+    color: ${(props): string => props.theme.colors.surfaceLight};
+  }
+  &:focus {
+    transform: scale(0.95);
+    color: ${(props): string => props.theme.colors.surfaceLight};
+  }
 `;
 
 const Footer: React.FC = () => (
   <FooterWrapper>
-    <GithubLink
-      rel="nofollow noopener noreferrer"
-      aria-label="Project Code"
-      href="https://github.com/amalhanaja/v1"
-      target="_blank"
-    >
-      <div>Made with Love by Alfian Akmal Hanantio</div>
-    </GithubLink>
+    <div style={{ textAlign: 'center' }}>
+      <GithubLink
+        rel="nofollow noopener noreferrer"
+        aria-label="Project Code"
+        href="https://github.com/amalhanaja/v1"
+        target="_blank"
+      >
+        <div>Made with Love by Alfian Akmal Hanantio</div>
+      </GithubLink>
+    </div>
   </FooterWrapper>
 );
 
