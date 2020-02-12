@@ -2,7 +2,6 @@ import * as React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import { PageRendererProps } from 'gatsby';
-import GlobalStyle from '../styles/GlobalStyle';
 import IconInstagram from '../components/Icons/Instagram';
 import IconLinkedIn from '../components/Icons/LinkedIn';
 import IconGithub from '../components/Icons/Github';
@@ -39,7 +38,6 @@ const SocialMediaWrapper = styled.div`
 const LinksPage: React.FC<PageRendererProps> = ({ location }) => (
   <Layout path={location.pathname}>
     <Wrapper>
-      <GlobalStyle />
       <Helmet title="Alfian Akmal Hanantio | Android Engineer">
         <html lang="en" />
       </Helmet>
